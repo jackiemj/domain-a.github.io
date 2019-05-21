@@ -1,0 +1,12 @@
+<html>
+<body>
+  <script type="text/javascript">
+  function sendPostMsg() {
+    var bobWindows = document.getElementById('bob').contentWindow; 
+    bobWindow.postMessage("Hi Bob!", "https://domain-m.github.io");
+  }
+  </script>
+  <iframe onload='sendPostMsg()' id='bob' src="https://domain-m.github.io/postman/target.html">
+  </iframe>
+</body>
+</html>
