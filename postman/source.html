@@ -6,7 +6,8 @@
     bobWindow.postMessage("Hi Bob!", "https://domain-m.github.io");
   }
   </script>
-  <iframe onload='sendPostMsg()' id='bob' src="https://domain-m.github.io/postman/target.html">
+  <button onclick=sendPostMsg()>Send Bob Message</button>
+  <iframe <!-- onload='sendPostMsg()'--> id='bob' src="https://domain-m.github.io/postman/target.html">
   </iframe>
 </body>
 </html>
